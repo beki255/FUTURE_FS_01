@@ -42,6 +42,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
+          <span className="hero-tag">Available for work</span>
           <h1>
             {name1.map((letter, i) => (
               <motion.span key={i} className="letter" custom={i} variants={letterVariants} initial="hidden" animate="visible">
@@ -49,7 +50,7 @@ const Hero = () => {
               </motion.span>
             ))}
             {" "}
-            <span className="name-highlight">
+            <span className="highlight">
               {name2.map((letter, i) => (
                 <motion.span key={i} className="letter" custom={i + 8} variants={letterVariants} initial="hidden" animate="visible">
                   {letter}
