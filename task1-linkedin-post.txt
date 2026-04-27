@@ -1,0 +1,27 @@
+**🚀 Task #1: Just launched my professional portfolio!**
+
+After months of learning and building, I'm excited to share my portfolio website that showcases my journey as a Full Stack Developer.
+
+**What I built:**
+A modern, responsive portfolio featuring:
+✦ 5 completed projects across Web & Desktop applications
+✦ MEARN Stack expertise (React, Node.js, MongoDB, MySQL)
+✦ Contact form with EmailJS integration
+✦ Clean, unique design with smooth animations
+
+**Key Learnings:**
+• Mastered React 19 + Vite for fast, modern web apps
+• Implemented responsive CSS with custom design system
+• Integrated third-party APIs for email functionality
+• Deployed to production with Vercel
+
+**Tech Stack Used:**
+React, Node.js, Express, MongoDB, MySQL, PHP, Python, Java, JavaFX
+
+Grateful for this journey! Looking forward to building more amazing projects.
+
+🔗 Live: https://bereket-shalemariam-personal-portfolio.vercel.app/
+
+@Future Interns
+
+#FullStackDeveloper #WebDevelopment #Portfolio #MEARNStack #ReactJS #EthiopiaDev #Task1 #FutureInterns
