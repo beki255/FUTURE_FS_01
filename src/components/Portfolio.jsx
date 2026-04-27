@@ -1,14 +1,19 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import jobPortalImg from '../../jop-portal-photo.jpg';
+import millHouseImg from '../../mill-house.png';
+import crmImg from '../../crm.png';
+import habeshaImg from '../../habesha-butique.png';
 import './Portfolio.css';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
 const fallbackProjects = [
-  { _id: 1, title: 'Human Resource Management System', category: 'desktop', image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800', description: 'Beginner-friendly HR management system with employee record management features using Python', tech: ['Python', 'SQL'], liveLink: '#', githubLink: '#' },
-  { _id: 2, title: 'Job Portal System', category: 'desktop', image: jobPortalImg, description: 'Job portal platform for job posting and applications with user authentication and job listing features', tech: ['Java', 'JavaFX'], liveLink: '#', githubLink: '#' },
-  { _id: 3, title: 'Mill House Management System', category: 'desktop', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800', description: 'Management system for mill house operations with CRUD operations and responsive UI', tech: ['Java', 'JavaFX', 'MySQL'], liveLink: '#', githubLink: '#' },
+  { _id: 1, title: 'Client Lead Management System', category: 'web-app', image: crmImg, description: 'MERN stack CRM for managing client leads with authentication and dashboard', tech: ['React', 'Node.js', 'MongoDB'], liveLink: '#', githubLink: '#' },
+  { _id: 2, title: 'Habesha Boutique', category: 'web-app', image: habeshaImg, description: 'Local business e-commerce platform for Ethiopian traditional clothing', tech: ['React', 'Node.js', 'MongoDB'], liveLink: '#', githubLink: '#' },
+  { _id: 3, title: 'Human Resource Management System', category: 'desktop', image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800', description: 'Beginner-friendly HR management system with employee record management features using Python', tech: ['Python', 'SQL'], liveLink: '#', githubLink: '#' },
+  { _id: 4, title: 'Job Portal System', category: 'desktop', image: jobPortalImg, description: 'Job portal platform for job posting and applications with user authentication and job listing features', tech: ['Java', 'JavaFX'], liveLink: '#', githubLink: '#' },
+  { _id: 5, title: 'Mill House Management System', category: 'desktop', image: millHouseImg, description: 'Management system for mill house operations with CRUD operations and responsive UI', tech: ['Java', 'JavaFX', 'MySQL'], liveLink: '#', githubLink: '#' },
 ];
 
 const Portfolio = () => {
