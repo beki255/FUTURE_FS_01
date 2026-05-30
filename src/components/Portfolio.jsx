@@ -7,7 +7,7 @@ import habeshaImg from '../../habesha-butique.png';
 import bloodBankImg from '../../bloodbank.jpg';
 import './Portfolio.css';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://localhost:5000/api' : '');
 
 const fallbackProjects = [
   { _id: 1, title: 'Client Lead Management System', category: 'web-app', image: crmImg, description: 'MERN stack CRM for managing client leads with authentication and dashboard', tech: ['React', 'Node.js', 'MongoDB'], liveLink: '#', githubLink: '#' },
@@ -28,6 +28,11 @@ const Portfolio = () => {
   }, []);
 
   const fetchProjects = async () => {
+    if (!API_URL) {
+      setProjects(fallbackProjects);
+      setLoading(false);
+      return;
+    }
     try {
       const response = await fetch(`${API_URL}/projects`);
       if (!response.ok) throw new Error('Failed to fetch');
