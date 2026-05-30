@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import emailjs from '@emailjs/browser';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import './Contact.css';
 
@@ -21,19 +20,19 @@ const Contact = () => {
     setStatus('sending');
 
     try {
-      // Send email TO YOU (the website owner)
-      await emailjs.send(
-        'service_v5xwcjc',
-        'template_dgfnmkl',
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-          to_email: 'bereket2553@gmail.com'
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
         },
-        '9ndqIG4UG-XT0U57e'
-      );
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok || !data.success) {
+        throw new Error(data.message || 'Failed to send');
+      }
 
       setStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
