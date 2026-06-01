@@ -7,7 +7,7 @@ import './About.css';
 const About = () => {
   const stats = [
     { icon: Award, number: '2+', label: 'Years Experience' },
-    { icon: Users, number: '5+', label: 'Happy Clients' },
+    { icon: Users, number: '0', label: 'Happy Clients' },
     { icon: Briefcase, number: '5', label: 'Projects Completed' },
     { icon: Award, number: '2+', label: 'Awards Won' },
   ];
