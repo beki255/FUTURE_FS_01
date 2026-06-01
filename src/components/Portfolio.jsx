@@ -39,7 +39,7 @@ const Portfolio = () => {
       const data = await response.json();
       setProjects(data);
     } catch (error) {
-      console.log('Using fallback data');
+      console.error('Error fetching projects, using fallback data:', error);
       setProjects(fallbackProjects);
     } finally {
       setLoading(false);

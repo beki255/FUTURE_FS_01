@@ -12,17 +12,7 @@ const letterVariants = {
   })
 };
 
-const floatVariants = {
-  animate: (i) => ({
-    y: [0, -8, 0],
-    transition: {
-      duration: 1,
-      repeat: Infinity,
-      delay: i * 0.1,
-      ease: "easeInOut"
-    }
-  })
-};
+
 
 const name1 = "Bereket".split("");
 const name2 = "Sahlemariam".split("");
