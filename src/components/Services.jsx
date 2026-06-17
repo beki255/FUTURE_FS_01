@@ -11,12 +11,6 @@ const Services = () => {
       features: ['React / Next.js', 'Node.js / Express', 'PHP / MySQL', 'MongoDB Database'],
     },
     {
-      icon: Monitor,
-      title: 'Desktop Application',
-      description: 'Creating powerful desktop applications for Windows with clean interfaces and robust functionality.',
-      features: ['Electron Framework', 'JavaScript / Python', 'Desktop UI/UX', 'System Integration'],
-    },
-    {
       icon: Server,
       title: 'Backend Development',
       description: 'Developing scalable server-side solutions with RESTful APIs and efficient database management.',

@@ -5,6 +5,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
 import Services from './components/Services';
+import Certificates from './components/Certificates';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
@@ -32,6 +33,7 @@ function App() {
         <Skills />
         <Portfolio />
         <Services />
+        <Certificates />
         <Contact />
       </main>
       <Footer />

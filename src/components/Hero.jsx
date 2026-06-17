@@ -16,7 +16,7 @@ const letterVariants = {
 
 const name1 = "Bereket".split("");
 const name2 = "Sahlemariam".split("");
-const subtitle = "Full Stack Developer".split("");
+const subtitle = "Web Developer | Aspiring Cybersecurity Professional".split("");
 
 const Hero = () => {
   const scrollTo = (id) => {
@@ -61,7 +61,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2, duration: 0.5 }}
           >
-            I build beautiful, responsive websites and applications that help businesses grow.
+            I build beautiful, responsive websites and applications that help businesses grow, while expanding my expertise in cybersecurity to ensure secure digital ecosystems.
           </motion.p>
 
           <div className="hero-buttons">

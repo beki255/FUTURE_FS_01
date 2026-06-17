@@ -21,6 +21,7 @@ const Navbar = ({ theme, toggleTheme }) => {
     { name: 'Skills', href: '#skills' },
     { name: 'Portfolio', href: '#portfolio' },
     { name: 'Services', href: '#services' },
+    { name: 'Certificates', href: '#certificates' },
     { name: 'Contact', href: '#contact' },
   ];
 

@@ -50,15 +50,18 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3>I'm a Full Stack Developer</h3>
+            <h3>I'm a Web Developer & Aspiring Cybersecurity Professional</h3>
             <p>
-              I'm a passionate full-stack developer with over 2 years of experience building 
+              I'm a passionate web developer with over 2 years of experience building 
               web applications and digital experiences. I specialize in creating responsive, 
-              user-friendly websites and applications that deliver real business value.
+              user-friendly websites and applications that deliver real business value. 
+              Alongside my development work, I am an aspiring cybersecurity professional dedicated 
+              to learning how to safeguard digital assets.
             </p>
             <p>
               My expertise includes front-end technologies like HTML5, CSS3, JavaScript, 
-              and React, as well as back-end technologies like Node.js, Python, php, mysql and MongoDB.
+              and React, as well as back-end technologies like Node.js, Python, PHP, MySQL and MongoDB. 
+              I am actively expanding my knowledge in network security, ethical hacking, and secure coding practices.
             </p>
 
             <div className="about-stats">
