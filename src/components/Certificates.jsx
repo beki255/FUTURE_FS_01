@@ -39,6 +39,12 @@ const Certificates = () => {
       issuer: 'Udacity',
       description: 'Programming Fundamentals',
       file: '/certificates/Learn_the_Latest_Tech_Skills;_Advance_Your_Career_Udacity4.PDF'
+    },
+    {
+      title: 'HACK-X Hackathon 2026',
+      issuer: 'HACK-X',
+      description: 'Certificate of participation and achievement in the HACK-X 2026 Hackathon.',
+      file: '/certificates/HACK-X 2026.jpg'
     }
   ];
 
